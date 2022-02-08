@@ -1,0 +1,51 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+
+url: https://trolling-on-the-moon.github.io
+baseurl: "/jekyll-sandbox"
+
+google_analytics: 
+repo: 
+disqus_shortname: 
+disqus_site_shortname: 
+
+# Author settings
+author:
+  name: John Doe
+  job: Frontend Engineer
+  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  thumb: /images/author.jpg
+  email: xx.me@gmail.com
+  url: https://aaa.me/
+  github: https://aaa.me/
+  twitter: https://aaa.me/
+  facebook: 
+  linkedin: 
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: icons
+    title: Icons
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
